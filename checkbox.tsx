@@ -1,9 +1,9 @@
-export function Checkbox({ checked, onCheckedChange }: { checked: boolean, onCheckedChange: () => void }) {
+export function Checkbox({ checked, onChange }: { checked: boolean, onChange: () => void }) {
   return (
     <input
       type="checkbox"
       checked={checked}
-      onChange={onCheckedChange}
+      onChange={onChange}
       className="w-4 h-4 accent-blue-600"
     />
   )
